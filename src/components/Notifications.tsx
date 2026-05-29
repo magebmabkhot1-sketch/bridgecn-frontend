@@ -15,7 +15,7 @@ export default function Notifications() {
 
     try {
       const res = await axios.get(
-        `http://localhost:4000/api/notifications/${user.id}`
+        `https://bridgecn-api.onrender.com/api/notifications/${user.id}`
       );
 
       setNotifications(res.data);
@@ -39,7 +39,7 @@ export default function Notifications() {
   const markAsRead = async (id: string) => {
     try {
       await axios.post(
-        `http://localhost:4000/api/notifications/${id}/read`
+        `https://bridgecn-api.onrender.com/api/notifications/${id}/read`
       );
 
       fetchNotifications();

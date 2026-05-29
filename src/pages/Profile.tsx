@@ -11,8 +11,8 @@ export default function Profile() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const userRes = await axios.get(`http://localhost:4000/api/users/${id}`);
-      const followRes = await axios.get(`http://localhost:4000/api/follow/${id}`);
+      const userRes = await axios.get(`https://bridgecn-api.onrender.com/api/users/${id}`);
+      const followRes = await axios.get(`https://bridgecn-api.onrender.com/api/follow/${id}`);
 
       setUser(userRes.data);
       setFollowData(followRes.data);
@@ -22,7 +22,7 @@ export default function Profile() {
   }, [id]);
 
   const follow = async () => {
-    await axios.post(`http://localhost:4000/api/follow/${id}/follow`, {
+    await axios.post(`https://bridgecn-api.onrender.com/api/follow/${id}/follow`, {
       userId: currentUser.id,
     });
 
@@ -30,7 +30,7 @@ export default function Profile() {
   };
 
   const unfollow = async () => {
-    await axios.post(`http://localhost:4000/api/follow/${id}/unfollow`, {
+    await axios.post(`https://bridgecn-api.onrender.com/api/follow/${id}/unfollow`, {
       userId: currentUser.id,
     });
 

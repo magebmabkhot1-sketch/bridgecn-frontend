@@ -5,7 +5,7 @@ let socket: Socket | null = null;
 export function getSocket() {
   const token = localStorage.getItem('bridgecn_token');
   if (!socket) {
-    socket = io((import.meta.env.VITE_API_URL || 'http://localhost:4000/api').replace('/api', ''), {
+    socket = io((import.meta.env.VITE_API_URL || 'https://bridgecn-api.onrender.com/api').replace('/api', ''), {
       autoConnect: false,
       auth: { token }
     });

@@ -48,7 +48,7 @@ const Register = () => {
 
     try {
       setLoading(true)
-      const response = await axios.post('http://localhost:4000/api/auth/register', {
+      const response = await axios.post('https://bridgecn-api.onrender.com/api/auth/register', {
         ...formData,
         fullName: `${formData.firstName} ${formData.lastName}`
       })

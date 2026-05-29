@@ -5,7 +5,7 @@ export default function Explore() {
   const [posts, setPosts] = useState<any[]>([]);
 
   useEffect(() => {
-    axios.get("http://localhost:4000/api/posts")
+    axios.get("https://bridgecn-api.onrender.com/api/posts")
       .then((res) => setPosts(res.data));
   }, []);
 

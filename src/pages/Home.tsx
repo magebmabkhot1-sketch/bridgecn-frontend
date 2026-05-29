@@ -18,7 +18,7 @@ const Home = () => {
     setLoading(true)
     try {
       // Note: Ensure your backend has a /api/waitlist endpoint or adjust this URL
-      await axios.post('http://localhost:4000/api/auth/register', {
+      await axios.post('https://bridgecn-api.onrender.com/api/auth/register', {
         firstName: 'Waitlist',
         lastName: 'User',
         email: email,

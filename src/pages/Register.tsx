@@ -109,7 +109,7 @@ const Register = () => {
       console.log(" Sending Payload:", payload)
 
       // 3. API Call
-      const response = await axios.post('http://localhost:4000/api/auth/register', payload)
+      const response = await axios.post('https://bridgecn-api.onrender.com/api/auth/register', payload)
 
       console.log("✅ Success:", response.data)
 

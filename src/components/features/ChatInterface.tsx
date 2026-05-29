@@ -56,7 +56,7 @@ const ChatInterface = ({ currentUser, targetUser, onClose }: ChatInterfaceProps)
 
   // Initialize Socket Connection
   useEffect(() => {
-    socket.current = io('http://localhost:4000')
+    socket.current = io('https://bridgecn-api.onrender.com')
 
     if (currentUser?.id) {
       socket.current.emit('join-user-room', currentUser.id)

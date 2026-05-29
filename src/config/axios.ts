@@ -2,7 +2,7 @@ import axios from 'axios'
 
 // Use the environment variable VITE_API_URL if it exists (for Production/Vercel)
 // Otherwise, fallback to localhost for local development
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:4000/api'
+const API_URL = import.meta.env.VITE_API_URL || 'https://bridgecn-api.onrender.com/api'
 
 const apiClient = axios.create({
   baseURL: API_URL,

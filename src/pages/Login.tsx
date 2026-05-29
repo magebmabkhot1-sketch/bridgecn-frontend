@@ -26,7 +26,7 @@ const Login = () => {
     
     try {
       setLoading(true)
-      const response = await axios.post('http://localhost:4000/api/auth/login', formData)
+      const response = await axios.post('https://bridgecn-api.onrender.com/api/auth/login', formData)
       
       localStorage.setItem('token', response.data.token)
       localStorage.setItem('user', JSON.stringify(response.data.user))
