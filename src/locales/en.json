@@ -1,0 +1,22 @@
+{
+  "app_name": "BridgeCN",
+  "tagline": "Connect beyond language.",
+  "nav_discover": "Discover",
+  "nav_messages": "Messages",
+  "nav_profile": "Profile",
+  "nav_logout": "Logout",
+  "lang_switch": "中文",
+  "feed_title": "Find Your Study Partner",
+  "feed_subtitle": "Students matching your language goals",
+  "btn_connect": "Connect & Chat",
+  "filter_all": "All",
+  "filter_cn": "Chinese Students",
+  "filter_intl": "International",
+  "search_placeholder": "Search by university or interest...",
+  "chat_placeholder": "Type a message...",
+  "call_video": "Video Call",
+  "call_audio": "Audio Call",
+  "empty_state": "No partners found. Try adjusting filters.",
+  "toast_connected": "Connection request sent!",
+  "toast_error": "Something went wrong."
+}

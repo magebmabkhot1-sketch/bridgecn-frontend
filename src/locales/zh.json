@@ -1,0 +1,22 @@
+{
+  "app_name": "BridgeCN",
+  "tagline": "跨越语言，连接彼此。",
+  "nav_discover": "发现伙伴",
+  "nav_messages": "消息",
+  "nav_profile": "个人中心",
+  "nav_logout": "退出登录",
+  "lang_switch": "English",
+  "feed_title": "寻找学习伙伴",
+  "feed_subtitle": "匹配您的语言学习目标",
+  "btn_connect": "连接并聊天",
+  "filter_all": "全部",
+  "filter_cn": "中国学生",
+  "filter_intl": "国际学生",
+  "search_placeholder": "按大学或兴趣搜索...",
+  "chat_placeholder": "输入消息...",
+  "call_video": "视频通话",
+  "call_audio": "语音通话",
+  "empty_state": "未找到伙伴。请尝试调整筛选条件。",
+  "toast_connected": "连接请求已发送！",
+  "toast_error": "出错了，请重试。"
+}
