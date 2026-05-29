@@ -13,10 +13,13 @@ export const apiClient = axios.create({
   withCredentials: true,
 });
 
+// EXPORT 'api' AS ALIAS FOR BACKWARD COMPATIBILITY
+export { apiClient as api };
+
 // Request interceptor for debugging
 apiClient.interceptors.request.use(
   (config) => {
-    console.log('➡️ REQUEST:', config.method?.toUpperCase(), config.url);
+    console.log('️ REQUEST:', config.method?.toUpperCase(), config.url);
     return config;
   },
   (error) => {
